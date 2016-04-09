@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wing.dao.UserInfoMapper" >
+  <!-- 通过用户名、密码获取用户信息 -->
+  <select id="getUserByUnPwd" resultMap="BaseResultMap" parameterType="java.util.Map">
+  	select 
+  	<include refid="Base_Column_List" />
+  	from tb_user_basic_info 
+  	where  user_name = #{userName,jdbcType=VARCHAR} AND password = #{password,jdbcType = INTEGER} 
+  </select>
+  
+  <!-- 通过用户名获取ID -->
+  <select id="getIdByUserName" resultMap="java.lang.Integer" parameterType="java.util.Map">
+  	select id
+  	from tb_user_basic_info
+  	where user_name = #{userName,jdbcType=VARCHAR}
+  </select>
+</mapper>
