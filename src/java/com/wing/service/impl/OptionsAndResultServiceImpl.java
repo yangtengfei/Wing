@@ -5,6 +5,8 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import org.springframework.stereotype.Service;
+
 import com.wing.dao.OptionsAndResultMapper;
 import com.wing.service.OptionsAndResultService;
 
@@ -14,6 +16,7 @@ import com.wing.service.OptionsAndResultService;
  * @version: 2016年4月9日下午7:58:29 
  * @todo:TODO
  */
+@Service("optionsAndResultService")
 public class OptionsAndResultServiceImpl implements OptionsAndResultService{
 
 	@Resource

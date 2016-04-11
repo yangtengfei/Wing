@@ -22,5 +22,5 @@ public interface OptionsAndResultMapper {
      * @param params
      * @return
      */
-	String getResultByOptions(Map<String, Object> params);
+	public String getResultByOptions(Map<String, Object> params);
 }

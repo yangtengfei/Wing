@@ -16,10 +16,9 @@ public interface UserInfoMapper {
     int updateByPrimaryKeySelective(UserInfo record);
 
     int updateByPrimaryKey(UserInfo record);
-
-    
+	
     /**
-     * 通过用户名、密码获取用户信息 ----此处还没写完
+     * 通过用户名、密码获取用户信息
      * login
      * @param userName
      * @param password
@@ -33,4 +32,5 @@ public interface UserInfoMapper {
 	 * @return
 	 */
 	int getIdByUserName(String userName);
+	
 }

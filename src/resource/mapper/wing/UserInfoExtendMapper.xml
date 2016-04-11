@@ -10,9 +10,10 @@
   </select>
   
   <!-- 通过用户名获取ID -->
-  <select id="getIdByUserName" resultMap="java.lang.Integer" parameterType="java.util.Map">
+  <select id="getIdByUserName" resultType="java.lang.Integer" parameterType="java.util.Map">
   	select id
   	from tb_user_basic_info
   	where user_name = #{userName,jdbcType=VARCHAR}
   </select>
+  
 </mapper>

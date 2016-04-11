@@ -6,9 +6,10 @@
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
     <result column="options" property="options" jdbcType="VARCHAR" />
     <result column="created_on" property="createdOn" jdbcType="TIMESTAMP" />
+    <result column="result" property="result" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, user_name, options, created_on
+    id, user_name, options, created_on, result
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -24,10 +25,10 @@
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into tb_user_career_test_info (user_name, options, created_on
-      )
-    values (#{userName,jdbcType=VARCHAR}, #{options,jdbcType=VARCHAR}, #{createdOn,jdbcType=TIMESTAMP}
-      )
+    insert into tb_user_career_test_info (user_name, options, created_on, 
+      result)
+    values (#{userName,jdbcType=VARCHAR}, #{options,jdbcType=VARCHAR}, #{createdOn,jdbcType=TIMESTAMP}, 
+      #{result,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.wing.model.UserCareerTestInfo" >
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
@@ -44,6 +45,9 @@
       <if test="createdOn != null" >
         created_on,
       </if>
+      <if test="result != null" >
+        result,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="userName != null" >
@@ -54,6 +58,9 @@
       </if>
       <if test="createdOn != null" >
         #{createdOn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="result != null" >
+        #{result,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -69,6 +76,9 @@
       <if test="createdOn != null" >
         created_on = #{createdOn,jdbcType=TIMESTAMP},
       </if>
+      <if test="result != null" >
+        result = #{result,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -76,7 +86,8 @@
     update tb_user_career_test_info
     set user_name = #{userName,jdbcType=VARCHAR},
       options = #{options,jdbcType=VARCHAR},
-      created_on = #{createdOn,jdbcType=TIMESTAMP}
+      created_on = #{createdOn,jdbcType=TIMESTAMP},
+      result = #{result,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

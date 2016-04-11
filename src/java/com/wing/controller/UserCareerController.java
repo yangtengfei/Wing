@@ -12,7 +12,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.wing.model.UserCareerTestInfo;
 import com.wing.service.OptionsAndResultService;
 import com.wing.service.UserCareerTestService;
-import com.wing.service.UserInfoService;
 
 /**
  * @author: tengfei yang
@@ -23,17 +22,17 @@ import com.wing.service.UserInfoService;
 
 @Controller
 @RequestMapping("/career")
-public class UserCareerTestController {
+public class UserCareerController {
 	
-	@Resource
+	@Resource(name = "optionsAndResultService")
 	private OptionsAndResultService optionsAndResultService;
-	@Resource
-	private UserInfoService userInfoService;
+	@Resource(name = "userCareerTestService")
+	private UserCareerTestService userCareerTestService;
 	
 	@RequestMapping("/test")
 	public ModelAndView test(@RequestParam(required = true) String options,
 			@RequestParam(required = true) String userName){
-		ModelAndView mv = new ModelAndView("index");
+		ModelAndView mv = new ModelAndView("user/welcome");
 		
 		String url;
 		String result = optionsAndResultService.getResultByOptions(options);
@@ -41,7 +40,10 @@ public class UserCareerTestController {
 		
 		testInfo.setUserName(userName);
 		testInfo.setOptions(options);
+		testInfo.setResult(result);
 		testInfo.setCreatedOn(new Date());
+		
+		userCareerTestService.saveTestInfo(testInfo);
 		
 		url = result;
 		

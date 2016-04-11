@@ -1,11 +1,12 @@
 package com.wing.controller;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -23,7 +24,7 @@ import com.wing.service.UserInfoService;
 @RequestMapping("/user")
 public class UserInfoController {
 	
-	@Resource
+	@Resource(name = "userInfoService")
 	private UserInfoService userInfoService;
 	
 	/**
@@ -38,21 +39,30 @@ public class UserInfoController {
 	public ModelAndView register(@RequestParam(required = true) String userName,
 			@RequestParam(required = true) String password,
 			@RequestParam(required = true) String email,
-			@RequestParam(required = false) String phone,
-			Model model){
+			@RequestParam(required = false) String phone){
 		
-		ModelAndView mv = new ModelAndView("page/dashen/index");
-		
-		UserInfo user = new UserInfo();
-		user.setUserName(userName);
-		user.setPassword(password);
-		user.setEmail(email);
-		user.setPhone(phone);
-		user.setCreatedOn(new Date());
-		user.setModifiedOn(new Date());
-		
-		userInfoService.saveUser(user);
-		
+		ModelAndView mv = new ModelAndView("user/welcome");
+		Map<String, Object> data = new HashMap<String, Object>();
+		try {
+			UserInfo user = new UserInfo();
+			user.setUserName(userName);
+			user.setPassword(password);
+			user.setEmail(email);
+			user.setPhone(phone);
+			user.setCreatedOn(new Date());
+			user.setModifiedOn(new Date());
+			
+			userInfoService.saveUser(user);
+		} catch (Exception e) {
+			e.printStackTrace();
+			data.put("statu", 0);
+			data.put("message", "注册失败");
+			mv.addObject("data", data);
+			return mv;
+		}
+		data.put("statu", 1);
+		mv.addObject("data", data);
+		System.out.println(mv);
 		return mv;
 	}
 	
@@ -63,14 +73,20 @@ public class UserInfoController {
 	 * @return
 	 */
 	@RequestMapping("/login")
-	public String login(@RequestParam(required = true) String userName,
+	public ModelAndView login(@RequestParam(required = true) String userName,
 			@RequestParam(required = true) String password){
 		
+		ModelAndView mv = new ModelAndView();	
+		Map<String, Object> data = new HashMap<String, Object>();
 		UserInfo user = userInfoService.getUserByUnPwd(userName, password);
 		if (null == user) {
-			return "false";
+			data.put("statu", 0);
+			data.put("message", "用户名或密码错误");
 		} else {
-			return "success";
+			data.put("statu", 1);
+			mv.setViewName("user/welcome");
 		}
+		mv.addObject("data", data);
+		return mv;
 	}
 }

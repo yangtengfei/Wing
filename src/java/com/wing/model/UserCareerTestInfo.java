@@ -11,6 +11,8 @@ public class UserCareerTestInfo {
 
     private Date createdOn;
 
+    private String result;
+
     public Integer getId() {
         return id;
     }
@@ -41,5 +43,13 @@ public class UserCareerTestInfo {
 
     public void setCreatedOn(Date createdOn) {
         this.createdOn = createdOn;
+    }
+
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result == null ? null : result.trim();
     }
 }

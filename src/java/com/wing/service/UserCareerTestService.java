@@ -1,4 +1,7 @@
 package com.wing.service;
+
+import com.wing.model.UserCareerTestInfo;
+
 /**
  * @author: tengfei yang
  * @email: yangtengfei666666@163.com
@@ -6,6 +9,12 @@ package com.wing.service;
  * @todo:TODO
  */
 public interface UserCareerTestService {
+	
+	/**
+	 * 保存测试信息
+	 * @param testInfo
+	 */
+	public void saveTestInfo(UserCareerTestInfo testInfo);
 
 
 }
