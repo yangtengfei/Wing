@@ -82,9 +82,10 @@ public class UserInfoController {
 		if (null == user) {
 			data.put("statu", 0);
 			data.put("message", "用户名或密码错误");
+			mv.setViewName("user/welcome.jsp");
 		} else {
 			data.put("statu", 1);
-			mv.setViewName("user/welcome");
+			mv.setViewName("user/answer.jsp");
 		}
 		mv.addObject("data", data);
 		return mv;

@@ -34,7 +34,6 @@ public class UserCareerController {
 			@RequestParam(required = true) String userName){
 		ModelAndView mv = new ModelAndView("user/welcome");
 		
-		String url;
 		String result = optionsAndResultService.getResultByOptions(options);
 		UserCareerTestInfo testInfo = new UserCareerTestInfo();
 		
@@ -45,7 +44,6 @@ public class UserCareerController {
 		
 		userCareerTestService.saveTestInfo(testInfo);
 		
-		url = result;
 		
 		return mv;
 		

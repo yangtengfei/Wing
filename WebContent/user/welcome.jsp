@@ -41,7 +41,7 @@
         <div class="nav-right">
 
             <div class="unauthenticated">
-                <a href="http://www.apicloud.com/signin">
+                <a id="login" style="cursor:pointer">
                     登录
                 </a>
                             <span>
@@ -940,6 +940,32 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="margin-top:20%">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">登录</h4>
+            </div>
+            <div class="modal-body">
+                <form action="/Wing/user/login" method="post">
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">用户名:</label>
+                        <input type="text" class="form-control" id="recipient-name" name="userName">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">密码:</label>
+                        <input type="password" class="form-control" name="password"id="message-text">
+                    </div>
+                    <input type="submit" class="btn btn-primary" style="background-color: 	rgb(137,174,0); float:right;">
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery-1.11.3.js"></script>
 <script src="js/modal.js"></script>
@@ -957,6 +983,17 @@
     $('#reg').click(function(){
        
         $('#exampleModal').modal('show');
+    });
+    $('#exampleModal2').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this);
+    });
+    $('#login').click(function(){
+       
+        $('#exampleModal2').modal('show');
     });
    
 </script>
