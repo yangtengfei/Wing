@@ -41,7 +41,7 @@ public class UserInfoController {
 			@RequestParam(required = true) String email,
 			@RequestParam(required = false) String phone){
 		
-		ModelAndView mv = new ModelAndView("user/welcome");
+		ModelAndView mv = new ModelAndView("user/welcome.jsp");
 		Map<String, Object> data = new HashMap<String, Object>();
 		try {
 			UserInfo user = new UserInfo();

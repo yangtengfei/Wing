@@ -1019,7 +1019,7 @@
         	alert('用户名或密码错误');
         	clearInterval(timer);
         }
-	}, 1000)
+	}, 10)
     
 </script>
 
