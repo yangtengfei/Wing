@@ -80,11 +80,11 @@ public class UserInfoController {
 		Map<String, Object> data = new HashMap<String, Object>();
 		UserInfo user = userInfoService.getUserByUnPwd(userName, password);
 		if (null == user) {
-			data.put("statu", 0);
-			data.put("message", "用户名或密码错误");
+			data.put("status", 0);
 			mv.setViewName("user/welcome.jsp");
 		} else {
-			data.put("statu", 1);
+			data.put("status", 1);
+			data.put("userName", userName);
 			mv.setViewName("user/answer.jsp");
 		}
 		mv.addObject("data", data);

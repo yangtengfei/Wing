@@ -14,8 +14,17 @@
     <link rel="shortcut icon" href="http://www.apicloud.com/img/favicon.png">
     <link rel="stylesheet" href="css/homenewlayout.css">
     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script type="text/javascript">
+    	function checkLeave(){
+    		var msg = $('#status').value();
+            alert(msg);
+            if(msg==='0'){
+            	alert('用户名或密码错误')
+            }
+    	}
+    </script>
 </head>
-<body class="home-layout ">
+<body class="home-layout "onbeforeunload="checkLeave()">
 <header class="">
     <div class="err-top">
         <i class="err-close">
@@ -43,6 +52,7 @@
             <div class="unauthenticated">
                 <a id="login" style="cursor:pointer">
                     登录
+                    <input type="hidden" id="message" value=${data.status }>
                 </a>
                             <span>
                             </span>
@@ -994,8 +1004,23 @@
     $('#login').click(function(){
        
         $('#exampleModal2').modal('show');
+        
     });
-   
+    window.onunload = function(){
+    	var msg = $('#status').value();
+        alert(msg);
+        if(msg==='0'){
+        	alert('用户名或密码错误')
+        }
+    }
+    var timer =  setInterval(function(){
+		var msg =$('#message').attr('value');
+        if(msg==='0'){
+        	alert('用户名或密码错误');
+        	clearInterval(timer);
+        }
+	}, 1000)
+    
 </script>
 
 </body>
