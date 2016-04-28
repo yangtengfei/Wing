@@ -28,12 +28,20 @@ public class UserInfoControllerTest {
 		
 		UserInfoServiceImpl userInfoServiceImpl = new UserInfoServiceImpl();
 		userInfoServiceImpl.saveUser(user);
+		
 	}
 	
 	@Test
 	public void outputResult(){
 		UserInfoController user = new UserInfoController();
 		ModelAndView mv = user.login("123", "123");
+		System.out.println(mv);
+	}
+	
+	@Test
+	public void registerTest(){
+		UserInfoController userController = new UserInfoController();
+		ModelAndView mv = userController.register("1234", "1234", "123@123.com", "123");
 		System.out.println(mv);
 	}
 
