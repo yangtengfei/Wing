@@ -63,53 +63,47 @@
         <ul class="nav nav-right">
             <li>
                 <a href="javascript:void(0)">
-                    APP开发
+                    职业分析
                 </a>
                 <ul class="nav-list">
                     <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/superwebview" class="nav-link">
+                        <a href="工作经验与工资关系.html" class="nav-link" target="_blank">
                             <div class="nav-left icon">
                                             <span class="i_superwebview">
                                             </span>
                             </div>
                             <div class="nav-left">
                                             <span class="nav-title">
-                                               SuperWebView
+                                               经验和工资
                                             </span>
                                             <span class="nav-description">
-                                                帮助原生程序员快速迭代
+                                               
                                             </span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/deepengine" class="nav-link">
+                        <a href="软件工程师工资分布.html" class="nav-link" target="_blank">
                             <div class="nav-left icon">
                                             <span class="i_deepengine">
                                             </span>
                             </div>
                             <div class="nav-left">
                                             <span class="nav-title">
-                                                Deep Engine
-                                            </span>
-                                            <span class="nav-description">
-                                                高效的跨平台APP引擎
+                                               软件工程师和工资
                                             </span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/cloudservice" class="nav-link">
+                         <a href="软件工程师学历要求分布.html" class="nav-link" target="_blank">
                             <div class="nav-left icon">
                                             <span class="i_cloudservice">
                                             </span>
                             </div>
                             <div class="nav-left">
                                             <span class="nav-title">
-                                                数据云
-                                            </span>
-                                            <span class="nav-description">
-                                                无需编程 自动生成Server端
+                                                学历和软件工程师
                                             </span>
                             </div>
                         </a>
@@ -117,73 +111,9 @@
                 </ul>
             </li>
             <li>
-                <a href="http://www.apicloud.com/cloudmanage">
-                    云管理
-                </a>
-            </li>
-            <li>
-                <a id="careerTest"  target="_blank">
+                <a  id="careerTest" target="_blank" style="cursor:pointer">
                    职业测试
                 </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    开发者
-                </a>
-                <ul class="nav-list single">
-                    <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/devtools" class="nav-link">
-                            开发工具
-                        </a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="http://community.apicloud.com/bbs/forum.php" class="nav-link" target="_blank">
-                            在线社区
-                        </a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="http://docs.apicloud.com/" class="nav-link" target="_blank">
-                            文档
-                        </a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="http://docs.apicloud.com/APICloud/videos-and-codes" class="nav-link">
-                            教程视频
-                        </a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/cases" class="nav-link">
-                            案例
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    VIP服务
-                </a>
-                <ul class="nav-list single">
-                    <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/vipservice/plan" class="nav-link">
-                            优先技术支持
-                        </a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/vipservice/channel" class="nav-link">
-                            渠道打包
-                        </a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/vipservice/course" class="nav-link">
-                            培训课程
-                        </a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="http://www.apicloud.com/vipservice/price" class="nav-link">
-                            优惠价格
-                        </a>
-                    </li>
-                </ul>
             </li>
         </ul>
     </div>
@@ -200,38 +130,43 @@
 </section>
 <section class="number">
     <div class="container">
-        <div class="h1">使用HTML5轻松开发高性能iOS、Android原生应用</div>
-        <div class="h6">使用标准WEB技术轻松开发iOS、Android原生应用；覆盖APP全生命周期，包括开发、API集成、测试、渠道打包、运营管理等</div>
-        <div class="total">
-            <div class="app">
-                <svg xmlns="http://www.w3.org/2000/svg" width="270" height="130" version="1.1" class="svg">
-                    <path d="M 65 10 A 55 55, 0, 1, 0, 65 120 H 205 A 55 55, 0, 1, 0, 205 10 H 65"></path>
-                </svg>
-                <div>
-                    <div class="h6">创建应用</div>
-                    <span id="appCount" class="count">446,282</span><span class="unit">个</span>
-                </div>
-            </div>
-            <div class="apk">
-                <svg xmlns="http://www.w3.org/2000/svg" width="270" height="130" version="1.1" class="svg">
-                    <path d="M 65 10 A 55 55, 0, 1, 0, 65 120 H 205 A 55 55, 0, 1, 0, 205 10 H 65"></path>
-                </svg>
-                <div>
-                    <div class="h6">累计生成安装包</div>
-                    <span id="apkCount" class="count">1,016,487</span><span class="unit">个</span>
-                </div>
-            </div>
-            <div class="api">
-                <svg xmlns="http://www.w3.org/2000/svg" width="270" height="130" version="1.1" class="svg">
-                    <path d="M 65 10 A 55 55, 0, 1, 0, 65 120 H 205 A 55 55, 0, 1, 0, 205 10 H 65"></path>
-                </svg>
-                <div>
-                    <div class="h6">API调用</div>
-                    <span id="apiCount" class="count">7,599,110,548</span><span class="unit">次</span>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="h1">使用Wing轻松获得最准确地职业分析</div>
+		<br><br><br>
+		<div class="total">
+			<div class="app">
+				<svg xmlns="http://www.w3.org/2000/svg" width="270" height="130"
+					version="1.1" class="svg"> <path
+					d="M 65 10 A 55 55, 0, 1, 0, 65 120 H 205 A 55 55, 0, 1, 0, 205 10 H 65"></path>
+				</svg>
+				<div>
+					<div class="h6">服务客户</div>
+					<span id="appCount" class="count">446,282</span><span class="unit">位</span>
+				</div>
+			</div>
+			<div class="apk">
+				<svg xmlns="http://www.w3.org/2000/svg" width="270" height="130"
+					version="1.1" class="svg"> <path
+					d="M 65 10 A 55 55, 0, 1, 0, 65 120 H 205 A 55 55, 0, 1, 0, 205 10 H 65"></path>
+				</svg>
+				<div>
+					<div class="h6">职业测试次数</div>
+					<span id="apkCount" class="count">1,016,487</span><span
+						class="unit">次</span>
+				</div>
+			</div>
+			<div class="api">
+				<svg xmlns="http://www.w3.org/2000/svg" width="270" height="130"
+					version="1.1" class="svg"> <path
+					d="M 65 10 A 55 55, 0, 1, 0, 65 120 H 205 A 55 55, 0, 1, 0, 205 10 H 65"></path>
+				</svg>
+				<div>
+					<div class="h6">分析案例</div>
+					<span id="apiCount" class="count">7,599,110,548</span><span
+						class="unit">个</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <link href="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/video-js.css" rel="stylesheet" type="text/css">

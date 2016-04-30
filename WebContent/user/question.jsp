@@ -19,7 +19,7 @@
 </head>
 
 <body class="zhi">
-	<div role="navigation" class="zu-top">
+	<!-- <div role="navigation" class="zu-top">
 		<div class="zg-wrap" id="zh-top-inner">
 			<a href="http://www.apesk.com/" class="zu-top-link-logo"
 				id="zh-top-link-logo" target="_blank">才储</a>
@@ -49,15 +49,15 @@
 						type="hidden"> <input name="s" type="hidden">
 					<input class="zu-top-search-input" id="q" name="word"
 						autocomplete="off" placeholder="搜之前在才储曾看到过的内容 ... ..." type="text">
-					<!-- <input type="submit" class="zu-top-add-question" id="zu-top-add-question"  value=" Search "> 
-                -->
+					<input type="submit" class="zu-top-add-question" id="zu-top-add-question"  value=" Search "> 
+               
 					<label for="q" class="hide-text"> </label>
 					<button type="submit" class="magnify-button">
 						<i class="icon icon-magnify-q"></i><span class="hide-text">
 						</span>
 					</button>
 				</form>
-				<!--<button class="zu-top-add-question" id="zu-top-add-question">启动后台</button>-->
+				<button class="zu-top-add-question" id="zu-top-add-question">启动后台</button>
 			</div>
 
 
@@ -111,7 +111,7 @@
 
 
 		</div>
-	</div>
+	</div> -->
 
 	<div class="zu-global-notify" id="zh-global-message"
 		style="display: none">
@@ -727,15 +727,8 @@ p {
 									align="center">
 									<br>
 
-									<p align="left">
-										<strong>温馨提示：</strong>
-									</p>
-
-
-									<p align="left">1、问卷选项没有“对”与“错”之分。请选择你是怎样做的，而不是选择你认为哪样更好。</p>
-
-
-									<p align="left">2、测试的目的是反映最真实的自己。请最大程度放松下来，选择更接近你平时的感受或行为的那项。
+									<p align="center">
+										<font size="10" color="red"><strong>是否提交？</strong></font>
 									</p>
 									<input type="hidden" id="opt" name="option">
 									 <input id="sub"
@@ -747,8 +740,8 @@ p {
 			</tr>
 		</tbody>
 	</table>
-	<p style="color: #666666; font-family: '微软雅黑'" align="center">
-		&#169;版权声明: 本作品著作权以及版权属于才储，并受法律保护</p>
+	<!-- <p style="color: #666666; font-family: '微软雅黑'" align="center">
+		&#169;版权声明: 本作品著作权以及版权属于才储，并受法律保护</p> -->
 	<!--<script>show_datitable();</script>
 
 <script language="javascript" type="text/javascript" src="3/1060974.js"></script>-->

@@ -350,8 +350,9 @@ dd div strong {
 /*浮动end*/
 </style>
 
-		<title>你们眼中的我是这样的吗？欢迎围观拍砖！才储分析：我是INTJ 专家型——追求能力与独立......</title> <script
-			src="js /share.js"></script>
+		<title>你们眼中的我是这样的吗？欢迎围观拍砖！才储分析：我是INTJ 专家型——追求能力与独立......Wing</title>
+		<link rel="shortcut icon" href="http://www.apicloud.com/img/favicon.png">
+		 <script src="js /share.js"></script>
 		<style type="text/css">
 #yddContainer {
 	display: block;
@@ -506,24 +507,7 @@ dd div strong {
 </head>
 <body>
 	<div id="report">
-		<table width="100%" border="0" cellspacing="0" cellpadding="0"
-			style="background: url(/mbtisoft/pic/headerpic.gif) top no-repeat;">
-			<tbody>
-				<tr>
-					<td width="180" style="padding-top: 2px;"><a
-						href="http://www.apesk.com/" target="_blank"><img
-							src="image /logo_normal_touming.gif" border="0" alt="才储，敢于做自己"></a>
-					</td>
-					<td></td>
-					<td width="300" align="right" class="f12"></td>
-
-
-				</tr>
-
-			</tbody>
-		</table>
-		<br>
-			<p
+			<!-- <p
 				style="text-indent: 2em; margin: 0px -7px 0px -7px; font-size: 12px;">
 				<a class="a-tips-Article-QQ" href="http://www.apesk.com/">首页</a>
 				&gt;&gt; <a class="a-tips-Article-QQ"
@@ -531,7 +515,7 @@ dd div strong {
 				&gt;&gt; <a class="a-tips-Article-QQ"
 					href="http://www.apesk.com/mbti/dati.asp" style="font-size: 19px"
 					target="_blank">立即参与MBTI性格测试&gt;&gt;</a>
-			</p> <!--   <a href="/mbti2/mbti_step_two.asp"target="_blank"><img src="/mensa/img/orange-apple-report1.gif" id="titlePic" border="0"/> </a>-->
+			</p>   <a href="/mbti2/mbti_step_two.asp"target="_blank"><img src="/mensa/img/orange-apple-report1.gif" id="titlePic" border="0"/> </a> -->
 
 			<script src="js /hm.js"></script><script>
 				function formcheck() {
@@ -545,19 +529,6 @@ dd div strong {
 				<h3 align="center">INTJ 专家型——追求能力与独立</h3> <!--新标题end--> <br> <br>
 
 
-						<div class="r">
-							<table>
-								<tbody>
-									<tr>
-										<td><b>报告接收人:</b></td>
-										<td width="130">才储成员6301636</td>
-										<td><b>日期:</b></td>
-										<td width="120">2015/9/22</td>
-									</tr>
-
-								</tbody>
-							</table>
-						</div>
 						<div class="clear"></div>
 
 						<p></p>
@@ -845,37 +816,15 @@ dd div strong {
 																																																														<br>
 
 
-																																																															<li><b><img
-																																																																	src="image /new.gif">温馨提示：</b><span
-																																																																class="STYLE11"><b>
-																																																																		若希望更全面了解自己及发展建议，可以继续参与<a
-																																																																		id="step2link"
-																																																																		style="font-size: 29px;"
-																																																																		class="a-tips-Article-QQ"
-																																																																		href="http://www.apesk.com/mbti2/mbti_step_two.asp?formlink=6301636"
-																																																																		target="_blank"><b>MBTI第二步测试！</b></a>
-																																																																</b></span></li>
-																																																														<b><br>
-																																																																	<br>
 
 
 
 
 
-																																																																		<p
-																																																																			style="BORDER-BOTTOM: 1px dashed #dddddd;"></p>
+																																																																		<p style="BORDER-BOTTOM: 1px dashed #dddddd;"></p>
 																																																																		<br>
 
 
-																																																																			<li>
-																																																																				<b>
-																																																																					即将面临高考专业选择的同学，</b>可以继续参与<a
-																																																																				id="step2link"
-																																																																				style="font-size: 29px;"
-																																																																				class="a-tips-Article-QQ"
-																																																																				href="http://www.apesk.com/mbti2/zyxz_two.asp?formlink=mbti"
-																																																																				target="_blank"><b>APESK专业选择评估测试</b></a>
-																																																																		</li> <br><br>
 
 																																																																					<li><span
 																																																																						class="STYLE11">若您是<a
@@ -883,20 +832,20 @@ dd div strong {
 																																																																							class="a-tips-Article-QQ"
 																																																																							style="font-size: 29px"
 																																																																							href="http://www.apesk.com/mbti_step2/mbti2_common_hr/admin/index.asp?userid="
-																																																																							target="_blank"><b>了解MBTI在人才招聘选拔中的应用</b></a></span>
+																																																																							target="_blank"><b>了解Wing在人才招聘选拔中的应用</b></a></span>
 																																																																				</li>
 																																																																				<br>
 																																																																						<br>
 
 
-																																																																							<li><span
+																																																																							<!-- <li><span
 																																																																								class="STYLE11"><b>你可能感兴趣的：</b><a
 																																																																									id="step2link"
 																																																																									class="a-tips-Article-QQ"
 																																																																									href="http://www.apesk.com/mbti/love/who-is-your-lover-pro.asp?code=223.73.241.5&user=6301636"
 																																																																									target="_blank"><b
 																																																																										style="font-size: 29px">谁是最适合你的异性？</b></a>
-																																																																							</span></li>
+																																																																							</span></li -->>
 																																																																						<br><br>
 
 																																																																									<!--<li ><span class="STYLE11"><b> 对报告呈现的职业群仍不满足？</b>试试微信版“最靠谱的职业测试”，测试后将模拟分析得出一项你最适合的职业。微信扫描下图即可进入测试。<br><br />
@@ -906,7 +855,7 @@ dd div strong {
 
 
 
-																																																																									<li><span
+																																																																									<!-- <li><span
 																																																																										class="STYLE11"><b>你可能感兴趣的：
 																																																																										</b><a
 																																																																											class="a-tips-Article-QQ"
@@ -961,7 +910,7 @@ dd div strong {
 																																																																																						href="http://www.apesk.com/mbti/dati.asp"
 																																																																																						target="_blank"
 																																																																																						class="a-tips-Article-QQ">http://www.apesk.com/mbti</a><br>
-																																																																																			</p>
+																																																																																			</p> -->
 
 
 																																																																																			<br><p
@@ -970,7 +919,7 @@ dd div strong {
 																																																																																					<p
 																																																																																						align="center"
 																																																																																						class="STYLE31">&#169;版权声明:
-																																																																																						本作品著作权以及版权属于才储公司，并受法律保护</p>
+																																																																																						本作品著作权以及版权属于Wing，并受法律保护</p>
 																																																																																					<br></b>
 																	</td>
 																</tr>
