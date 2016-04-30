@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+    <style>
+    	#main{
+    		position:relative;
+    		left:30%;
+    		top:30%;
+    	}
+    </style>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    title: {
+        text: '经验-工资'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['软件工程师','系统架构工程师','前端开发工程师','游戏开发','数据库开发工程师']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['0年','1-3年','3-5年','5-10年']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name:'软件工程师',
+            type:'line',
+            data:[5906,8455,11941,16970],
+        },
+        {
+            name:'前端开发工程师',
+            type:'line',
+            data:[7054,8820,13676,18740],
+        },
+        {
+            name:'系统架构工程师',
+            type:'line',
+            data:[13294,13522,17559,22493],
+        },
+        {
+            name:'游戏开发',
+            type:'line',
+            data:[5902,10906,13831,17890]
+        },
+        {
+            name:'数据库开发工程师',
+            type:'line',
+            data:[7944,9423,13187,22000]
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

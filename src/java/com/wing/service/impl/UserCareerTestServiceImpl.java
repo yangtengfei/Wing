@@ -1,7 +1,10 @@
 package com.wing.service.impl;
 
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 
+import com.wing.dao.UserCareerTestInfoMapper;
 import com.wing.model.UserCareerTestInfo;
 import com.wing.service.UserCareerTestService;
 
@@ -14,9 +17,12 @@ import com.wing.service.UserCareerTestService;
 @Service("userCareerTestService")
 public class UserCareerTestServiceImpl implements UserCareerTestService {
 
+	@Resource
+	private UserCareerTestInfoMapper userCareerTestInfoMapper;
+	
 	@Override
 	public void saveTestInfo(UserCareerTestInfo testInfo) {
-		
+		userCareerTestInfoMapper.insertSelective(testInfo);
 	}
 
 }

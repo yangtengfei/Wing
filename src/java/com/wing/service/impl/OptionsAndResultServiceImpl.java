@@ -26,8 +26,7 @@ public class OptionsAndResultServiceImpl implements OptionsAndResultService{
 	public String getResultByOptions(String options) {
 		Map<String, Object> params = new HashMap<String, Object>();
 		params.put("options", options);
-		String result = optionsAndResultMapper.getResultByOptions(params);
-		return result;
+		return optionsAndResultMapper.getResultByOptions(params);
 	}
 
 }

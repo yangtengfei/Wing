@@ -39,7 +39,7 @@ public class UserCareerController {
 	@RequestMapping("/test")
 	public ModelAndView test(@RequestParam(required = true) String option,
 			@RequestParam(required = true) String userName){
-		ModelAndView mv = new ModelAndView("user/welcome");
+		ModelAndView mv = new ModelAndView();
 		Map<String, Object> data = new HashMap<String, Object>();
 		
 		System.out.println("userName: " + userName + " " + "option: " + option);
@@ -51,6 +51,7 @@ public class UserCareerController {
 				data.put("status", 0);
 				data.put("message", "用户不存在");
 				mv.addObject("data", data);
+				mv.setViewName("user/fail.jsp");
 				return mv;
 			}
 			
@@ -65,6 +66,8 @@ public class UserCareerController {
 			userCareerTestService.saveTestInfo(testInfo);
 			
 			data.put("status", 1);
+			
+			if (null == result) result = "LinZhiLing";
 			String url = "user/" + result + ".jsp";
 			mv.addObject("data", data);
 			mv.setViewName(url);
@@ -73,6 +76,7 @@ public class UserCareerController {
 			data.put("statu", 0);
 			data.put("message", "测试失败");
 			mv.addObject("data", data);
+			mv.setViewName("user/fail.jsp");
 		}
 		return mv;
 	}

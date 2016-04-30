@@ -29,6 +29,6 @@ public interface UserInfoService {
 	 * @param userName
 	 * @return
 	 */
-	public int getIdByUserName(String userName);
+	public Integer getIdByUserName(String userName);
 
 }

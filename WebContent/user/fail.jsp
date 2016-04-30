@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-欢迎：${currentUser.userName }
+错误信息:${data.message }
 </body>
 </html>

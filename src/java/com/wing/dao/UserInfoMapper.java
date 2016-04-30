@@ -28,9 +28,9 @@ public interface UserInfoMapper {
 	
 	/**
 	 * 通过用户名获取id
-	 * @param userName
+	 * @param params
 	 * @return
 	 */
-	int getIdByUserName(String userName);
+	Integer getIdByUserName(Map<String, Object> params);
 	
 }

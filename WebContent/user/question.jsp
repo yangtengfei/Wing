@@ -578,7 +578,7 @@ p {
 								<p align="left">2、测试的目的是反映最真实的自己。请最大程度放松下来，选择更接近你平时的感受或行为的那项。
 								</p>
 
-								<input value="123" name="userName" type="hidden"> <input
+								<input id="userN" name="userName" type="hidden"> <input
 									value="31" id="feishi" name="feishi" type="hidden"> <input
 									id="id" value="" name="id" type="hidden"> <input
 									class="green button" onclick="show_tip(1);"
@@ -719,7 +719,7 @@ p {
 
 								</div>
 							</div>
-							<img style="width: 0px; display: none;" src="3/jd_bg.gif"
+							<img style="width: 0px; display: none;" src="image/jd_bg.gif"
 								id="img_jd" height="15">
 							<div id="submitbtn" class="style123w" style="display:none">
 								<div id="kaishi"
@@ -770,5 +770,8 @@ p {
 			</div>
 		</div>
 	</div>
+	<script>
+		document.getElementById('userN').value = window.location.search.match(/=(\S+)$/)[1];
+	</script>
 </body>
 </html>

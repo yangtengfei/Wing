@@ -12,8 +12,11 @@
     </title>
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
     <link rel="shortcut icon" href="http://www.apicloud.com/img/favicon.png">
-    <link rel="stylesheet" href="css/homenewlayout.css">
-    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/homenewlayout.css">
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/newindex.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/lang.css">
     <script type="text/javascript">
     	function checkLeave(){
     		var msg = $('#status').value();
@@ -52,7 +55,7 @@
             <div class="unauthenticated">
             <strong style="color:red;font-size:20px;">Welcome </strong>
             <span>&nbsp;&nbsp; </span>
-            <strong style="color:#fff;font-size:20px;">${data.userName }</strong>
+            <strong style="color:#fff;font-size:20px;" id="user">${data.userName }</strong>
                             
             </div>
 
@@ -119,8 +122,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.apicloud.com/modulestore">
-                    聚合API
+                <a id="careerTest"  target="_blank">
+                   职业测试
                 </a>
             </li>
             <li>
@@ -230,394 +233,7 @@
         </div>
     </div>
 </section>
-<section class="case">
-    <div class="container">
-        <div class="h1">各类APP都在使用APICloud</div>
-        <div>
-            <ul class="left-link">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="right-app">
-                <div class="area active">
-                    <div class="active">
-                        <div class="appType">
-                            新闻
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/whxw.png" alt="武汉通">
-                        </div>
-                        <div class="appName">
-                            武汉通
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="appType">
-                            IOT
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/opler.png" alt="opler">
-                        </div>
-                        <div class="appName">
-                            Opler
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="appType">
-                            教育
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/ls.png" alt="狸米老师">
-                        </div>
-                        <div class="appName">
-                            狸米老师
-                        </div>
-                    </div>
-                </div>
-                <div class="area">
-                    <div class="active">
-                        <div class="appType">
-                            体育
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/oozq.png" alt="偶偶足球">
-                        </div>
-                        <div class="appName">
-                            偶偶足球
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="appType">
-                            社区
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/qz.png" alt="全众社区">
-                        </div>
-                        <div class="appName">
-                            全众社区
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="appType">
-                            生活服务
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/mmm.png" alt="慢慢买">
-                        </div>
-                        <div class="appName">
-                            慢慢买
-                        </div>
-                    </div>
-                </div>
-                <div class="area">
-                    <div class="active">
-                        <div class="appType">
-                            电商
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/ks.png" alt="空色美术">
-                        </div>
-                        <div class="appName">
-                            空色美术
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="appType">
-                            理财
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/yjy.png" alt="优交易">
-                        </div>
-                        <div class="appName">
-                            优交易
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="appType">
-                            O2O
-                        </div>
-                        <div class="icon">
-                            <img src="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/zsyy.png" alt="掌上云阳">
-                        </div>
-                        <div class="appName">
-                            掌上云阳
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="case-description">
-    <div class="container">
-        <div class="sub active">
-            <div class="area active">				
-				<span class="description">
-					《武汉通》是长江日报官方网站长江网重点打造的一款基于武汉热点事件及热门话题推荐的新闻阅读客户端。
-				</span>
-				<span class="speak">
-					《武汉通》开发主管 彭蔚
-				</span>
-            </div>
-            <div class="area">				
-				<span class="description">
-					Opler智能温控器，专注打造地暖已装、新装用户及售后服务市场的B2B2C及O2O商业模式平台。
-				</span>
-				<span class="speak">
-					Opler 创始人&amp; CEO 杨凡
-				</span>
-            </div>
-            <div class="area">				
-				<span class="description">
-					狸米是一套打通教师、学生和家长三方的互联网教育平台，目前在全国超过1000所公立学校全面部署使用。
-				</span>
-				<span class="speak">
-					狸米科技 副总裁 张楠
-				</span>
-            </div>
 
-        </div>
-        <div class="sub">
-            <div class="area active">				
-				<span class="description">
-					偶偶从专业的足球产品报道、评测、鉴定，到足球产品视频、电商平台、二手交易、正品商家认证等多维度提供一站式专业化服务。
-				</span>
-				<span class="speak">
-					偶偶足球 CEO 周敏
-				</span>
-            </div>
-            <div class="area">				
-				<span class="description">
-					全众社区是一家专业为物业管理公司提供升级转型的平台服务商，拥有行业内领先的SaaS平台。
-				</span>
-				<span class="speak">
-					全众社区  CTO 刘海浪
-				</span>
-            </div>
-            <div class="area">				
-				<span class="description">
-					慢慢买APP—慢慢买比价网推出的一款手机比价APP--让你掌控价格，不再买贵。
-				</span>
-				<span class="speak">
-					慢慢买 CTO 毛春杰
-				</span>
-            </div>
-        </div>
-        <div class="sub">
-            <div class="area active">				
-				<span class="description">
-					空色美术商城是中国第一款专为“美术人”开发设计的艺术类购物APP，包含儿童、美术高考、艺术家三个年龄层次的所有美术类用品。 
-				</span>
-				<span class="speak">
-					空色美术 CEO 庄国强
-				</span>
-            </div>
-            <div class="area">				
-				<span class="description">
-					优交易，专注于为投资者提供策略资讯和社交工具的垂直社交平台。提供证券投资能力的知识分享及探讨，培养良好的理财心态。
-				</span>
-				<span class="speak">
-					优交易 CEO 陈前程
-				</span>
-            </div>
-            <div class="area">				
-				<span class="description">
-					聚集云阳餐饮、酒店宾馆、家居建材、旅游景点、房产、休闲娱乐场所、婚庆服务、汽车服务各种的商家信息。 
-				</span>
-				<span class="speak">
-					掌上云阳 CEO 曾德勇 
-				</span>
-            </div>
-        </div>
-        <a class="btn-link" href="http://www.apicloud.com/cases">更多案例</a>
-    </div>
-</section>
-<section class="development">
-    <div class="h1">APP开发</div>
-    <dvi class="container">
-        <div class="superwebview">
-            <span class="title">SuperWebView</span>
-            <p class="description">
-                iOS与Android原生工程师，使用SuperWebView大幅缩短Native APP迭代周期
-            </p>
-            <a href="http://www.apicloud.com/superwebview">
-                <span>SuperWebView</span>
-                <div class="hover"></div>
-            </a>
-        </div>
-        <div class="deepengine">
-            <span class="title">Deep Engine</span>
-            <p class="description">
-                架构的工程师和前端工程师，使用Deep Engine可以快速开发iOS、Android原生应用
-            </p>
-            <a href="http://www.apicloud.com/deepengine">
-                <span>Deep Engine</span>
-                <div class="hover"></div>
-            </a>
-        </div>
-    </dvi>
-</section>
-<section class="polymerization">
-    <div class="container">
-        <div class="bg"></div>
-        <div class="rectangle"></div>
-        <div class="content">
-            <div class="top">聚合API</div>
-            <div>
-                <div class="left"><span>一站式</span>提供海量聚合API</div>
-                <div class="right"><span>一键式</span>集成跨平台开放SDK</div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="manager">
-    <div class="container">
-        <div class="h1">云管理</div>
-        <div class="h6">云引擎加速云端开发，包括可视化构建数据模型与云端执行环境；APP运营管理通用的精华服务，无忧提供</div>
-        <ul class="icons">
-            <li>
-                <i class="i_database"></i>
-                <span>数据服务</span>
-            </li>
-            <li>
-                <i class="i_push"></i>
-                <span>推送</span>
-            </li>
-            <li>
-                <i class="i_repair"></i>
-                <span>云修复</span>
-            </li>
-            <li>
-                <i class="i_update"></i>
-                <span>版本更新</span>
-            </li>
-            <li>
-                <i class="i_bigdata"></i>
-                <span>大数据分析</span>
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="video">
-    <div class="bg">
-        <video id="bgvideo" muted="true" loop="" poster="/new/video-banner.jpg" class="embed-responsive-item"><source type="video/mp4" src="http://7o50kb.com2.z0.glb.qiniucdn.com/20ss.mp4"></video>
-    </div>
-    <div class="filter"></div>
-    <div class="container">
-        <div>
-            <div class="t5">云又一次超越自己的技术探索管理</div>
-            <div class="t1">融合，再融合</div>
-            <div id="playVideo" class="play"></div>
-            <a href="http://www.apicloud.com/signup">
-                快速注册
-            </a>
-        </div>
-    </div>
-</section>
-<section class="cooperation">
-    <div class="container">
-        <div class="h3" title="app开发合作伙伴">合作伙伴</div>
-        <div class="row logos-contain media">
-            <div id="partners">
-                <div class="wrap" style="width: 6144px;">
-                    <div class="partner">
-                        <div>
-                            <a class="logos-links m10">又拍云</a>
-                            <a class="logos-links m25">梆梆安全</a>
-                            <a class="logos-links m23">TalkingData</a>
-                            <a class="logos-links m6">Testin云测</a>
-                            <a class="logos-links m5">云适配</a>
-                        </div>
-                        <div>
-                            <a class="logos-links m2">美洽</a>
-                            <a class="logos-links m9">融云</a>
-                            <a class="logos-links m13">个推</a>
-                            <a class="logos-links m12">多盟</a>
-                            <a class="logos-links m8">战旗TV</a>
-                        </div>
-                    </div>
-                    <div class="partner">
-                        <div>
-                            <a class="logos-links m14">游族</a>
-                            <a class="logos-links m15">JPush极光推送</a>
-                            <a rel="nofollow" class="logos-links m19">信鸽</a>
-                            <a rel="nofollow" class="logos-links m24">芒果MOGO</a>
-                            <a class="logos-links m7">PING++</a>
-                        </div>
-                        <div>
-                            <a class="logos-links m11">百姓网</a>
-                            <a class="logos-links m18">智石科技</a>
-                            <a class="logos-links m22">云知声</a>
-                            <a class="logos-links m21">微客服</a>
-                            <a class="logos-links m1">酷果</a>
-                        </div>
-                    </div>
-                    <div class="partner">
-                        <div>
-                            <a class="logos-links m20">fir.im</a>
-                            <a class="logos-links m16">图灵机器人</a>
-                            <a class="logos-links m17">环信</a>
-                            <a class="logos-links m26">现在支付</a>
-                            <a class="logos-links m27">比目</a>
-                        </div>
-                        <div>
-                            <a class="logos-links m28">云智慧</a>
-                            <a class="logos-links m29">云之讯</a>
-                            <a class="logos-links m30">有米</a>
-                            <a class="logos-links m31">一登</a>
-                            <a class="logos-links m32">领通科技</a>
-                        </div>
-                    </div>
-                    <div class="partner">
-                        <div>
-                            <a class="logos-links m33">七牛</a>
-                            <a class="logos-links m34">计蒜客</a>
-                            <a class="logos-links m35">科大讯飞</a>
-                            <a class="logos-links m36">诸葛</a>
-                            <a class="logos-links m37">sobug</a>
-                        </div>
-                        <div>
-                            <a class="logos-links m38">畅思广告</a>
-                            <a class="logos-links m39">点开移动</a>
-                            <a class="logos-links m40">互动通</a>
-                            <a class="logos-links m41">oneapm</a>
-                            <a class="logos-links m42">智妍科技</a>
-                        </div>
-                    </div>
-                    <div class="partner">
-                        <div>
-                            <a class="logos-links m43">Udesk</a>
-                            <a class="logos-links m44">听云</a>
-                            <a class="logos-links m45">凤岐茶社</a>
-                            <a class="logos-links m46">图普</a>
-                            <a class="logos-links m47">逸创云客服</a>
-                        </div>
-                        <div>
-                            <a class="logos-links m48">BeeCloud</a>
-                            <a class="logos-links m49">灵雀云</a>
-                            <a class="logos-links m50">知安</a>
-                            <a class="logos-links m51">酷传</a>
-                            <a class="logos-links m52">智齿</a>
-                        </div>
-                    </div>
-                    <div class="partner">
-                        <div>
-                            <a class="logos-links m53">洋葱</a>
-                            <a class="logos-links m54">阿里百川</a>
-                            <a class="logos-links m55">机智云</a>
-                            <a class="logos-links m56">天翼RTC</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div id="pointer">
-                    <ul><li class="active"></li><li></li><li></li><li></li><li></li><li></li></ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <link href="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/video-js.css" rel="stylesheet" type="text/css">
 <div class="modalx">
     <a href="javascript:void(0);" class="close"></a>
@@ -750,7 +366,6 @@
                     </a>
                 </dd>
             </dl>
-            <link rel="stylesheet" href="./APICloud跨平台APP技术专家 - 中国领先移动云服务平台_files/lang.css">
             <dl class="langouter">
                 <div class="langbox" id="selectLang">
                     <div class="leftimg imgCN">
@@ -1015,7 +630,12 @@
         	clearInterval(timer);
         }
 	}, 1000)
-    
+    $(function(){
+    	$('#careerTest').click(function(){
+    		var user = $("#user").html();
+    		window.open( "http://localhost:8080/Wing/user/question.jsp?user="+user);
+    	})
+    })
 </script>
 
 </body>

@@ -38,14 +38,10 @@ public class UserInfoServiceImpl implements UserInfoService {
 	}
 
 	@Override
-	public int getIdByUserName(String userName) {
+	public Integer getIdByUserName(String userName) {
 		Map<String, Object> params = new HashMap<String, Object>();
 		params.put("userName", userName);
-		
-		System.out.println("userName: " + userName);
-		
-//		return userInfoMapper.getIdByUserName(userName);
-		return 1;
+		return userInfoMapper.getIdByUserName(params);
 	}
 
 }
